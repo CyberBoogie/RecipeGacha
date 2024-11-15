@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja"> <!-- 言語コードを 'en' から 'ja' に戻す -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>レシピガチャガチャ</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* QRコードとテキストを右下に固定するスタイル */
+    .qr-container {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      text-align: center;
+    }
+    .qr-code-text {
+      margin-bottom: 5px;
+      width: 300px;
+      height: 40px;
+    }
+    .qr-code {
+      margin-bottom: 5px;
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gacha-container">
+    <!-- ガチャマシンのイメージとチャット部分 -->
+    <div class="gacha-machine">
+      <img src="見出し.png" alt="Header" class="midashi-image">
+      <img src="ガチャガチャ.png" alt="Gacha Machine" class="machine-image">
+      <div class="gacha-chat">
+        <p id="gachaMessage">今日の献立は何かな！？</p>
+      </div>
+    </div>
+
+    <!-- ガチャボタン -->
+    <button id="gachaButton">
+      <img src="ボタン.png" alt="Spin Gacha" class="gacha-button-image">
+    </button>
+
+    <!-- ガチャボールエリア -->
+    <div class="gacha-ball-area">
+      <div id="gachaBall" class="gacha-ball hidden">
+        <img id="recipeImage" src="" alt="Recipe Image" class="recipe-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- QRコードと説明テキスト -->
+  <div class="qr-container">
+    <img id="qrTextImage" src="確認.png" alt="QRコード説明" class="qr-code-text"> <!-- 画像でテキスト -->
+    <a href="https://cyberboogie.github.io/StressCheck/" target="_blank">
+      <img id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cyberboogie.github.io/StressCheck/" alt="QRコード" class="qr-code">
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

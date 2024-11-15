@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.gacha-container {
+    text-align: center;
+}
+
+.gacha-machine {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.machine-image {
+    width: 150px;
+    height: auto;
+}
+
+.gacha-chat {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+#gachaButton {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.gacha-button-image {
+    width: 150px; /* âÊëúÇÃïùÇí≤êÆ */
+    height: auto;
+}
+
+
+.gacha-ball-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gacha-ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #e0dcdc;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+.recipe-image {
+    width: 60px;
+    height: 60px;
+    border-radius: %;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    opacity: 1;
+    top: 0;
+}
